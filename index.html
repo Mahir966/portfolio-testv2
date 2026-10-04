@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="cybercore" data-mode="dark" data-motion="full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#05070d">
+
+<title>YOUR NAME — Cybersecurity × AI × Robotics × Software × Research</title>
+<meta name="description" content="Portfolio of YOUR NAME — a multidisciplinary technologist building in cybersecurity, AI, robotics, embedded systems, RF and open science.">
+<meta name="author" content="YOUR NAME">
+<meta name="keywords" content="cybersecurity, ethical hacking, artificial intelligence, machine learning, robotics, embedded systems, SDR, IoT, web development, open science">
+<link rel="canonical" href="https://USERNAME.github.io/REPOSITORY/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="YOUR NAME — Technology Portfolio">
+<meta property="og:description" content="Cybersecurity × AI × Robotics × Software × Research — a futuristic portfolio OS.">
+<meta property="og:url" content="https://USERNAME.github.io/REPOSITORY/">
+<meta property="og:image" content="assets/projects/placeholder.svg">
+<meta property="og:site_name" content="YOUR NAME">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YOUR NAME — Technology Portfolio">
+<meta name="twitter:description" content="Cybersecurity × AI × Robotics × Software × Research.">
+<meta name="twitter:image" content="assets/projects/placeholder.svg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<!-- Fonts are optional: every family has a local-stack fallback, so the site works fully offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:wght@500;700&family=Press+Start+2P&family=Caveat:wght@400;700&family=Archivo+Black&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Applies saved appearance settings before first paint so a returning
+     visitor never sees a flash of the default theme. Kept tiny and guarded
+     with try/catch because file:// contexts may block localStorage. -->
+<noscript>
+  <style>
+    /* No JavaScript: show every reveal-animated element immediately. */
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    .hero__canvas, .hero__scanlines, .hero__orbit { display: none; }
+  </style>
+</noscript>
+<script>
+(function () {
+  document.documentElement.classList.remove('no-js');
+  // Safety net: if script.js fails or is blocked, un-hide animated content.
+  setTimeout(function () {
+    if (!window.__portfolioBooted) document.documentElement.classList.add('reveal-fallback');
+  }, 2500);
+  try {
+    var s = JSON.parse(localStorage.getItem('portfolio-os.v1') || '{}');
+    var t = document.documentElement;
+    if (s.theme) t.setAttribute('data-theme', s.theme);
+    if (s.mode) t.setAttribute('data-mode', s.mode);
+    if (s.motion) t.setAttribute('data-motion', s.motion);
+    if (s.locale) t.lang = s.locale;
+    if (typeof s.accent === 'string' && /^#[0-9a-f]{6}$/i.test(s.accent)) {
+      t.style.setProperty('--accent', s.accent);
+      if (s.accentCustom) t.setAttribute('data-accent-custom', '');
+    }
+  } catch (e) { /* first visit or storage disabled */ }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "YOUR NAME",
+  "url": "https://USERNAME.github.io/REPOSITORY/",
+  "jobTitle": "Cybersecurity & AI Engineer / Builder / Researcher",
+  "address": { "@type": "PostalAddress", "addressCountry": "Bangladesh" },
+  "knowsAbout": ["Cybersecurity","Ethical Hacking","Artificial Intelligence","Machine Learning","Robotics","Embedded Systems","Software Engineering","Web Development","SDR","IoT","Open Science"],
+  "sameAs": ["https://github.com/YOUR_GITHUB_USERNAME"]
+}
+</script>
+</head>
+
+<body class="is-booting">
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- ============ ICON SPRITE (inline SVG symbols, referenced with <use>) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.94-1.8-2.94-1.8 0-2.07 1.4-2.07 2.85V21H9z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5zM4.5 5a.5.5 0 0 0-.5.5v.6l8 4.7 8-4.7v-.6a.5.5 0 0 0-.5-.5zM20 8.3l-8 4.7-8-4.7v10.2c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5z"/></symbol>
+  <symbol id="i-discord" viewBox="0 0 24 24"><path d="M19.3 5.3A16 16 0 0 0 15.4 4l-.3.6a12 12 0 0 1 3.4 1.6 11.7 11.7 0 0 0-9-.7 11.6 11.6 0 0 0-1.6.7A12 12 0 0 1 8.9 4.6L8.6 4a16 16 0 0 0-3.9 1.3C2.2 9 1.6 12.6 1.9 16.2a16 16 0 0 0 4.8 2.4l1-1.6c-.9-.3-1.7-.8-2.4-1.3l.6-.4a11.5 11.5 0 0 0 10.2 0l.6.4c-.8.5-1.6 1-2.4 1.3l1 1.6a16 16 0 0 0 4.8-2.4c.4-4.2-.5-7.8-2.4-10.9zM8.7 14.1c-.9 0-1.7-.9-1.7-2s.7-2 1.7-2 1.7.9 1.7 2-.8 2-1.7 2zm6.6 0c-.9 0-1.7-.9-1.7-2s.7-2 1.7-2 1.7.9 1.7 2-.8 2-1.7 2z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M17.5 3h3.2l-7 8 8.3 10h-6.5l-5-6.2L4.7 21H1.5l7.5-8.6L1 3h6.6l4.6 5.7zm-1.1 16h1.8L7.7 4.8H5.8z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM4 19a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 5v14" fill="none"/><path d="M4.5 4A2.5 2.5 0 0 0 2 6.5v11A2.5 2.5 0 0 0 4.5 20h15a2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 19.5 4zM4 6.5c0-.28.22-.5.5-.5h15c.28 0 .5.22.5.5v11c0 .28-.22.5-.5.5h-15a.5.5 0 0 1-.5-.5z"/><path d="M6.7 8.3a1 1 0 0 1 1.4 0L10 10.2l-1.9 1.9a1 1 0 1 1-1.4-1.4l.5-.5-.5-.5a1 1 0 0 1 0-1.4zM11.5 13h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 1 1-4.6 13.4l-2.2 2.2a1 1 0 1 1-1.4-1.4l2.2-2.2A7.5 7.5 0 0 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0 0 20c1.3 0 2-.9 2-1.9 0-.6-.3-1-.6-1.4-.3-.3-.5-.7-.5-1.1 0-.9.7-1.6 1.6-1.6H16a6 6 0 0 0 6-6C22 5.9 17.5 2 12 2zm-5 9a1.7 1.7 0 1 1 0-3.4A1.7 1.7 0 0 1 7 11zm3.2-4.3a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zm4.6.4a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zm3.4 3.9a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm1 5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5.3 4A1 1 0 0 1 6.1 4.3L12 10.2l5.9-5.9a1 1 0 1 1 1.4 1.4L13.4 11.6l5.9 5.9a1 1 0 1 1-1.4 1.4L12 13l-5.9 5.9A1 1 0 1 1 4.7 17.5l5.9-5.9-5.9-5.9A1 1 0 0 1 5.3 4z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 17a1 1 0 0 1 1 1V21.5a1 1 0 1 1-2 0V20a1 1 0 0 1 1-1zM2 12a1 1 0 0 1 1-1h1.5a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm17.5 0a1 1 0 0 1 1-1H22a1 1 0 1 1 0 2h-1.5a1 1 0 0 1-1-1zM4.9 4.9a1 1 0 0 1 1.4 0l1.1 1.1a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4zm11.7 11.7a1 1 0 0 1 1.4 0l1.1 1.1a1 1 0 0 1-1.4 1.4l-1.1-1.1a1 1 0 0 1 0-1.4zM19.1 4.9a1 1 0 0 1 0 1.4l-1.1 1.1a1 1 0 1 1-1.4-1.4l1.1-1.1a1 1 0 0 1 1.4 0zM7.4 16.6a1 1 0 0 1 0 1.4l-1.1 1.1a1 1 0 0 1-1.4-1.4l1.1-1.1a1 1 0 0 1 1.4 0z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12.6 2.2a1 1 0 0 1 .2 1.1 8 8 0 0 0 9.9 10.5 1 1 0 0 1 1.2 1.3A10 10 0 1 1 11.6 2a1 1 0 0 1 1 .2z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.3 4.3a1 1 0 0 1 1.4 0l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.4-1.4L18.6 13H3a1 1 0 1 1 0-2h15.6l-5.3-5.3a1 1 0 0 1 0-1.4z"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.4l-8.3 8.3a1 1 0 0 1-1.4-1.4L18.6 4H15a1 1 0 0 1-1-1zM5 5h5a1 1 0 1 1 0 2H6v11h11v-4a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 2a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1h1a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zM4 9a1 1 0 0 1 1-1h1v7a3 3 0 0 0 3 3h6v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm4-4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM13 17a1 1 0 1 1-2 0v-5.2a1 1 0 1 1 2 0z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20.7 5.3a1 1 0 0 1 0 1.4l-10 10a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4L10 14.6 19.3 5.3a1 1 0 0 1 1.4 0z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.2-5.9 3.2 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2a1 1 0 0 1 .4.1l7 3A1 1 0 0 1 20 6v6c0 5-3.4 8.6-7.6 10a1 1 0 0 1-.8 0C7.4 20.6 4 17 4 12V6a1 1 0 0 1 .6-.9l7-3A1 1 0 0 1 12 2zm-1 5.5a1 1 0 1 0 0 2h.5v4.6a1 1 0 1 0 2 0V8.5a1 1 0 0 0-1-1z"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><path d="M9 2a1 1 0 0 1 1 1v1h4V3a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 20 6.5V8h1a1 1 0 1 1 0 2h-1v4h1a1 1 0 1 1 0 2h-1v1.5a2.5 2.5 0 0 1-2.5 2.5H16v1a1 1 0 1 1-2 0v-1h-4v1a1 1 0 1 1-2 0v-1H6.5A2.5 2.5 0 0 1 4 17.5V16H3a1 1 0 1 1 0-2h1v-4H3a1 1 0 1 1 0-2h1V6.5A2.5 2.5 0 0 1 6.5 4H8V3a1 1 0 0 1 1-1zm-2 4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm2.5 3h5a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 14.5 17h-5A1.5 1.5 0 0 1 8 15.5v-5A1.5 1.5 0 0 1 9.5 9z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 1.5a1 1 0 0 1 1 1V4h3.5A3.5 3.5 0 0 1 20 7.5V9h1a1 1 0 1 1 0 2h-1v3.5a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 14.5V7.5A3.5 3.5 0 0 1 7.5 4H11V2.5a1 1 0 0 1 1-1zM9 10a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/><path d="M6 19h12l2 3H4z"/></symbol>
+  <symbol id="i-radio" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM3.5 20.5a13 13 0 0 1 0-17 1 1 0 0 1 1.4 1.4 11 11 0 0 0 0 14.2 1 1 0 0 1-1.4 1.4zm17 0a1 1 0 0 1-1.4-1.4 11 11 0 0 0 0-14.2 1 1 0 1 1 1.4-1.4 13 13 0 0 1 0 17zM6.8 17.2a1 1 0 0 1-1.4-1.4 7 7 0 0 0 0-9.6 1 1 0 0 1 1.4-1.4 9 9 0 0 1 0 12.4zm11.9 0a9 9 0 0 1 0-12.4 1 1 0 0 1 1.4 1.4 7 7 0 0 0 0 9.6 1 1 0 0 1-1.4 1.4z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2v4.2l5.6 11A2 2 0 0 1 17.8 21H6.2a2 2 0 0 1-1.8-2.9L10 7.2V3a1 1 0 0 1-1-1zm3 1v4.6a1 1 0 0 1-.1.4L10 12h4l-1.9-4a1 1 0 0 1-.1-.4V3z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M16.6 2.6a2.4 2.4 0 0 1 3.4 0l1.4 1.4a2.4 2.4 0 0 1 0 3.4l-1.6 1.6-4.8-4.8zM13.6 5.6l4.8 4.8L8.5 20.3a2 2 0 0 1-1 .5l-4.2 1a1 1 0 0 1-1.2-1.2l1-4.2a2 2 0 0 1 .5-1z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M9.3 4.6a1 1 0 0 1 .4 1.4L5.6 12l4.1 6a1 1 0 1 1-1.7 1.2l-4.5-6.6a1 1 0 0 1 0-1.2l4.5-6.6a1 1 0 0 1 1.3-.2zm5.4 0a1 1 0 0 1 1.3.2l4.5 6.6a1 1 0 0 1 0 1.2l-4.5 6.6a1 1 0 1 1-1.7-1.2l4.1-6-4.1-6a1 1 0 0 1 .4-1.4z"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M11.5 2.1a1 1 0 0 1 1 0l9 5a1 1 0 0 1 0 1.8l-9 5a1 1 0 0 1-1 0l-9-5a1 1 0 0 1 0-1.8zM4.5 12.6 2.5 13.7a1 1 0 0 0 0 1.8l9 5a1 1 0 0 0 1 0l9-5a1 1 0 0 0 0-1.8l-2-1.1-6.5 3.6a2 2 0 0 1-2 0z"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v9A2.5 2.5 0 0 1 19.5 17h-15A2.5 2.5 0 0 1 2 14.5zM4.5 5a.5.5 0 0 0-.5.5v9c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zM8 19h8a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2z"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M4 11h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"/></symbol>
+  <symbol id="i-square" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M20 3.3a1 1 0 0 1 1.2 1v11a3.5 3.5 0 1 1-2-3.2V6.6l-7-1.6v8.4a3.5 3.5 0 1 1-2-3.2V5.7a1 1 0 0 1 1.2-1z"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path d="M11.4 3.1a1 1 0 0 1 .6.9v16a1 1 0 0 1-1.6.8L5.6 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.6l4.8-3.8a1 1 0 0 1 1-.1zM16 8.6 21.4 14a1 1 0 1 1-1.4 1.4L14.6 10a1 1 0 0 1 1.4-1.4zm5.4 0a1 1 0 0 1 0 1.4L16 15.4A1 1 0 1 1 14.6 14L20 8.6a1 1 0 0 1 1.4 0z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><path d="M3 4.5A1.5 1.5 0 0 1 4.5 3h5A1.5 1.5 0 0 1 11 4.5v5A1.5 1.5 0 0 1 9.5 11h-5A1.5 1.5 0 0 1 3 9.5zm10 0A1.5 1.5 0 0 1 14.5 3h5A1.5 1.5 0 0 1 21 4.5v5A1.5 1.5 0 0 1 19.5 11h-5A1.5 1.5 0 0 1 13 9.5zm-10 10A1.5 1.5 0 0 1 4.5 13h5a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 9.5 21h-5A1.5 1.5 0 0 1 3 19.5zm10 0A1.5 1.5 0 0 1 14.5 13h5a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-1.5 1.5h-5a1.5 1.5 0 0 1-1.5-1.5z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2l1.8 5.4a3 3 0 0 0 1.8 1.8L21 11l-5.4 1.8a3 3 0 0 0-1.8 1.8L12 20l-1.8-5.4a3 3 0 0 0-1.8-1.8L3 11l5.4-1.8a3 3 0 0 0 1.8-1.8zm7 12 .9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2c1.6 0 3.1 1.6 3.9 4H8.1C8.9 5.6 10.4 4 12 4zm-4.9 0c-.5.9-.9 1.9-1.2 3H4.4A8 8 0 0 1 7.1 4zM4.1 9h2c-.1.6-.1 1.3-.1 3s0 2.4.1 3h-2A8 8 0 0 1 4.1 9zm1.6 8h1.5c.3 1.1.7 2.1 1.2 3a8 8 0 0 1-2.7-3zm2.4 0h3.9c-.8 2.4-2.3 4-3.9 4s-.7-1.6-1.6-4zm-1.5-8h3.5c.1 1 .2 2.4.2 3s-.1 2-.2 3H6.6c-.1-.6-.2-1.9-.2-3s.1-2.4.2-3zm4 0H16c.1.6.2 1.9.2 3s-.1 2.4-.2 3h-5.4c-.1-.6-.2-1.9-.2-3s.1-2.4.2-3zm1.3-5c1.6 0 3.1 1.6 3.9 4h-1.9c-.4-1.6-1-3-2-4zm4.9 0c-.5.9-.9 1.9-1.2 3h1.5c.3-1.1.7-2.1 1.2-3a8 8 0 0 0-1.5 0zm1.6 3c-.1.6-.1 1.3-.1 3s0 2.4.1 3h2a8 8 0 0 0 0-6z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path d="M15 2a7 7 0 0 0-6.7 9L2.3 17A1 1 0 0 0 2 17.7V21a1 1 0 0 0 1 1h3a1 1 0 0 0 .7-.3l1-1a1 1 0 0 0 .3-.7V19h1a1 1 0 0 0 .7-.3l1-1a1 1 0 0 0 .3-.7V16h1l1.3-1.3A7 7 0 1 0 15 2zm2.5 3.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></symbol>
+  <symbol id="i-cert" viewBox="0 0 24 24"><path d="M12 1.5a6.5 6.5 0 0 1 4 11.6V22a1 1 0 0 1-1.6.8L12 20.9l-2.4 1.9A1 1 0 0 1 8 22v-8.9A6.5 6.5 0 0 1 12 1.5zm-2 12.8a6 6 0 0 0 4 0v4.3l-1.4-1.1a1 1 0 0 0-1.2 0L10 18.6z"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M14.4 2.6c3.4-.6 6.4-.9 6.9-.4s.2 3.5-.4 6.9a11 11 0 0 1-3.2 5.6l-2.2 2.2a2 2 0 0 1-2.8 0l-1.6-1.6-2.6 2.6a1 1 0 0 1-1.4-1.4l2.6-2.6-1.6-1.6a2 2 0 0 1 0-2.8l2.2-2.2a11 11 0 0 1 4.1-2.7zM10.3 10.3a2 2 0 1 0 2.8 2.8 2 2 0 0 0-2.8-2.8zM4 17a3 3 0 0 1 3 3 3 3 0 0 1-4 0 3 3 0 0 1 1-3z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v2h2.5a1 1 0 0 1 1 1c0 3-2 5.4-4.6 6a6 6 0 0 1-3.9 3.6V19h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2.4A6 6 0 0 1 7.1 13C4.5 12.4 2.5 10 2.5 7a1 1 0 0 1 1-1H5V4a1 1 0 0 1 1-1zM5 8c.2 1.3 1 2.4 2 3V8zm14 0h-2v3c1-.6 1.8-1.7 2-3z"/></symbol>
+  <symbol id="i-git" viewBox="0 0 24 24"><path d="M7 2a3 3 0 0 1 1 5.8v8.4A3 3 0 1 1 5 19a3 3 0 0 1-1-5.8V7.8A3 3 0 1 1 7 2zm10 0a3 3 0 1 1-.9 5.9A3.5 3.5 0 0 1 12.5 11H11v5.2A3 3 0 1 1 9 19a3 3 0 0 1 1-5.8V9h2.5a1.5 1.5 0 0 0 1.5-1.5V8A3 3 0 0 1 17 2z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 2h13a2 2 0 0 1 2 2v14a4 4 0 0 1-4 4H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1 2v4h11V4zm-1 6v10h12.5a2 2 0 0 0 2-2V10z"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.6 2h4.8l.4 2.3 1.7 1 2.2-.8 2.4 4.2-1.7 1.6v2l1.7 1.6-2.4 4.2-2.2-.8-1.7 1-.4 2.3H9.6l-.4-2.3-1.7-1-2.2.8L2.9 14l1.7-1.6v-2L2.9 8.7l2.4-4.2 2.2.8 1.7-1z"/></symbol>
+  <symbol id="i-command" viewBox="0 0 24 24"><path d="M6.5 2A4.5 4.5 0 1 1 11 6.5v11a4.5 4.5 0 1 1-4.5-4.5h11A4.5 4.5 0 1 1 13 17.5v-11A4.5 4.5 0 0 1 6.5 2zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm11 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm0 11a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-11 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6v4.6l1.7 2.6A1.5 1.5 0 0 1 18.4 17H5.6a1.5 1.5 0 0 1-1.3-2.3L6 12.6V8a6 6 0 0 1 6-6zm0 20a3 3 0 0 1-2.8-2h5.6a3 3 0 0 1-2.8 2z"/></symbol>
+</svg>
+
+<!-- ============ PLACEHOLDER NOTICE ============ -->
+<div class="setup-banner" id="setup-banner" hidden>
+  <svg class="ico" aria-hidden="true"><use href="#i-settings"></use></svg>
+  <p><strong>Demo content active.</strong> Open <code>script.js</code> → <code>portfolioConfig</code> and replace the <code>YOUR_*</code> placeholders with your details.</p>
+  <button type="button" class="setup-banner__close" id="setup-banner-close" aria-label="Dismiss setup notice"><svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg></button>
+</div>
+
+<!-- ============ READING PROGRESS ============ -->
+<div class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="scroll-progress">
+  <span class="scroll-progress__bar" id="scroll-progress-bar"></span>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="site-nav">
+  <div class="nav__inner shell">
+    <a class="brand" href="#home" aria-label="Go to top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><use href="#i-cpu"></use></svg>
+      </span>
+      <span class="brand__text">
+        <strong data-bind="name">YOUR NAME</strong>
+        <small data-bind="tagline">CYBERSECURITY × AI × ROBOTICS</small>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <a href="#home" class="nav__link" data-nav="home">Home</a>
+      <a href="#about" class="nav__link" data-nav="about">About</a>
+      <a href="#skills" class="nav__link" data-nav="skills">Skills</a>
+      <a href="#projects" class="nav__link" data-nav="projects">Projects</a>
+      <a href="#experience" class="nav__link" data-nav="experience">Experience</a>
+      <a href="#certifications" class="nav__link" data-nav="certifications">Certs</a>
+      <a href="#achievements" class="nav__link" data-nav="achievements">Achievements</a>
+      <a href="#contact" class="nav__link" data-nav="contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button type="button" class="icon-btn" id="nav-search-btn" aria-label="Search site (press slash)" data-tip="Search (/)">
+        <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+      </button>
+      <button type="button" class="icon-btn" id="nav-cmd-btn" aria-label="Open command palette (Control K)" data-tip="Command palette (Ctrl K)">
+        <svg class="ico" aria-hidden="true"><use href="#i-command"></use></svg>
+      </button>
+      <button type="button" class="icon-btn" id="nav-terminal-btn" aria-label="Open terminal mode" data-tip="Terminal">
+        <svg class="ico" aria-hidden="true"><use href="#i-terminal"></use></svg>
+      </button>
+      <button type="button" class="icon-btn icon-btn--accent" id="nav-theme-btn" aria-label="Open theme studio" data-tip="Theme studio">
+        <svg class="ico" aria-hidden="true"><use href="#i-palette"></use></svg>
+      </button>
+      <button type="button" class="icon-btn" id="nav-os-btn" aria-label="Enter Portfolio OS mode" data-tip="Portfolio OS">
+        <svg class="ico" aria-hidden="true"><use href="#i-monitor"></use></svg>
+      </button>
+      <button type="button" class="icon-btn nav__burger" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="ico" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav__scanline" aria-hidden="true"></div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav class="mobile-menu__panel" aria-label="Mobile">
+    <div class="mobile-menu__head">
+      <span class="eyebrow">Navigate</span>
+      <button type="button" class="icon-btn" id="mobile-menu-close" aria-label="Close menu">
+        <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+    <ul class="mobile-menu__list" id="mobile-menu-list"></ul>
+    <div class="mobile-menu__foot">
+      <button type="button" class="btn btn--ghost btn--sm" data-action="theme-studio">
+        <svg class="ico" aria-hidden="true"><use href="#i-palette"></use></svg> Theme Studio
+      </button>
+      <button type="button" class="btn btn--ghost btn--sm" data-action="terminal">
+        <svg class="ico" aria-hidden="true"><use href="#i-terminal"></use></svg> Terminal
+      </button>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" aria-labelledby="hero-title" data-section="home" data-nav-title="Home">
+  <div class="hero__bg" aria-hidden="true">
+    <canvas id="hero-canvas" class="hero__canvas"></canvas>
+    <div class="hero__grid"></div>
+    <div class="hero__glow hero__glow--a"></div>
+    <div class="hero__glow hero__glow--b"></div>
+    <div class="hero__scanlines"></div>
+    <div class="hero__orbit">
+      <span class="hero__orbit-ring"></span>
+      <span class="hero__orbit-ring hero__orbit-ring--2"></span>
+      <span class="hero__node hero__node--1"></span>
+      <span class="hero__node hero__node--2"></span>
+      <span class="hero__node hero__node--3"></span>
+    </div>
+  </div>
+
+  <div class="hero__inner shell">
+    <div class="hero__copy">
+      <p class="hero__status" data-reveal>
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span><span data-i18n="hero.status">Available for research, security &amp; build collaborations</span></span>
+      </p>
+
+      <p class="hero__eyebrow" data-reveal data-reveal-delay="1" data-i18n="hero.eyebrow">Multidisciplinary Technology Builder</p>
+
+      <h1 class="hero__title" id="hero-title" data-reveal data-reveal-delay="2">
+        <span class="hero__title-line">I build at the edge of</span>
+        <span class="hero__title-rotator" id="hero-rotator" aria-live="polite">
+          <span class="hero__rotator-track" id="hero-rotator-track">
+            <span>Cybersecurity</span><span>Artificial Intelligence</span><span>Robotics</span><span>Software Engineering</span><span>Scientific Research</span>
+          </span>
+        </span>
+        <span class="hero__title-line hero__title-line--sub" data-bind="name">YOUR NAME</span>
+      </h1>
+
+      <p class="hero__lede" data-reveal data-reveal-delay="3" data-i18n="hero.lede">
+        I design and engineer secure, intelligent and connected systems — from penetration-testing tooling and
+        AI pipelines to embedded robotics and RF experimentation. Research-driven, open by default, shipped end-to-end.
+      </p>
+
+      <div class="hero__cta" data-reveal data-reveal-delay="4">
+        <a class="btn btn--primary" href="#projects" data-magnetic>
+          <svg class="ico" aria-hidden="true"><use href="#i-grid"></use></svg>
+          <span data-i18n="hero.cta1">Explore My Work</span>
+        </a>
+        <a class="btn btn--ghost" href="assets/cv.pdf" download data-cv-link data-magnetic>
+          <svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg>
+          <span data-i18n="hero.cta2">Download CV</span>
+        </a>
+        <a class="btn btn--ghost" href="#contact" data-magnetic>
+          <svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg>
+          <span data-i18n="hero.cta3">Contact Me</span>
+        </a>
+      </div>
+
+      <ul class="socials" id="hero-socials" aria-label="Social profiles" data-reveal data-reveal-delay="5"></ul>
+
+      <!-- Counter cells always ship their honest text: a real value, or the
+           editable [ADD] placeholder. A literal 0 must never reach the DOM,
+           because an unset counter would then read as a real achievement. -->
+      <dl class="hero__stats" data-reveal data-reveal-delay="6">
+        <div><dt data-i18n="hero.stat1">Focus areas</dt><dd data-count="18" data-count-suffix="+">18+</dd></div>
+        <div><dt data-i18n="hero.stat2">Systems built</dt><dd data-count="0" data-count-placeholder="[ADD]">[ADD]</dd></div>
+        <div><dt data-i18n="hero.stat3">Years learning</dt><dd data-count="0" data-count-placeholder="[ADD]">[ADD]</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__visual" data-reveal data-reveal-delay="3">
+      <div class="terminal-card" id="hero-terminal">
+        <div class="terminal-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+          <span class="terminal-card__title">~/portfolio — zsh</span>
+        </div>
+        <pre class="terminal-card__body" id="hero-typed" aria-live="polite"></pre>
+      </div>
+
+      <div class="hero__cards">
+        <article class="float-card" data-float="0">
+          <svg class="ico" aria-hidden="true"><use href="#i-shield"></use></svg>
+          <p class="float-card__title">Security</p>
+          <p>Offensive tooling, recon &amp; secure architecture.</p>
+        </article>
+        <article class="float-card" data-float="1">
+          <svg class="ico" aria-hidden="true"><use href="#i-bot"></use></svg>
+          <p class="float-card__title">AI Systems</p>
+          <p>LLM agents, RAG pipelines &amp; computer vision.</p>
+        </article>
+        <article class="float-card" data-float="2">
+          <svg class="ico" aria-hidden="true"><use href="#i-rocket"></use></svg>
+          <p class="float-card__title">Robotics &amp; RF</p>
+          <p>ESP32 firmware, sensors, SDR signal work.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#about" aria-label="Scroll to about section">
+    <span data-i18n="hero.scroll">Scroll</span>
+    <span class="hero__scroll-line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about" data-section="about" data-nav-title="About" aria-labelledby="about-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">01</span> <span data-i18n="about.eyebrow">Identity</span></p>
+      <h2 class="section__title" id="about-title" data-reveal data-reveal-delay="1" data-i18n="about.title">A builder across security, intelligence &amp; hardware</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="about.lede">
+        I sit at the intersection of offensive security, applied AI and physical computing — comfortable in a
+        terminal, a notebook and a soldering iron bay on the same day.
+      </p>
+    </header>
+
+    <div class="about-grid">
+      <article class="identity-card" data-reveal>
+        <div class="identity-card__top">
+          <img class="identity-card__avatar" src="assets/images/avatar.svg" alt="Portrait placeholder for YOUR NAME" width="400" height="400" loading="lazy" decoding="async">
+          <div class="identity-card__meta">
+            <h3 data-bind="name">YOUR NAME</h3>
+            <p class="identity-card__role" data-bind="role">Cybersecurity &amp; AI Engineer · Builder · Researcher</p>
+            <p class="identity-card__loc">
+              <svg class="ico" aria-hidden="true"><use href="#i-globe"></use></svg>
+              <span data-bind="location">Bangladesh</span>
+            </p>
+            <ul class="chip-row" id="identity-chips" aria-label="Core disciplines"></ul>
+          </div>
+        </div>
+
+        <div class="identity-card__grid">
+          <div class="mini-stat"><span class="mini-stat__k" data-i18n="about.k1">Studying</span><span class="mini-stat__v">[ADD YOUR STUDY]</span></div>
+          <div class="mini-stat"><span class="mini-stat__k" data-i18n="about.k2">Building</span><span class="mini-stat__v">[ADD WHAT YOU BUILD]</span></div>
+          <div class="mini-stat"><span class="mini-stat__k" data-i18n="about.k3">Learning</span><span class="mini-stat__v">[ADD CURRENT FOCUS]</span></div>
+          <div class="mini-stat"><span class="mini-stat__k" data-i18n="about.k4">Open to</span><span class="mini-stat__v">[ADD OPPORTUNITIES]</span></div>
+        </div>
+
+        <div class="identity-card__mission">
+          <svg class="ico" aria-hidden="true"><use href="#i-sparkle"></use></svg>
+          <p data-i18n="about.mission">[ADD YOUR MISSION STATEMENT] — the one sentence that explains why you build.</p>
+        </div>
+      </article>
+
+      <div class="about-cols">
+        <article class="prose-card" data-reveal data-reveal-delay="1">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-book"></use></svg> <span data-i18n="about.bioTitle">Biography</span></h3>
+          <p data-i18n="about.bio">[ADD YOUR BIO] Write 3–5 sentences: where you started, what you study, what you build, and what you are reaching for next.</p>
+          <p data-i18n="about.bio2">[ADD YOUR BIO — PART 2] Mention a defining project, a competition, a research interest, or a mentor that shaped your direction.</p>
+        </article>
+
+        <article class="prose-card" data-reveal data-reveal-delay="2">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-layers"></use></svg> <span data-i18n="about.philosophyTitle">Technology philosophy</span></h3>
+          <ul class="tick-list" id="philosophy-list"></ul>
+        </article>
+
+        <article class="prose-card" data-reveal data-reveal-delay="3">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-radio"></use></svg> <span data-i18n="about.interestsTitle">Interests</span></h3>
+          <ul class="tag-cloud" id="interest-cloud"></ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--alt" id="skills" data-section="skills" data-nav-title="Skills" aria-labelledby="skills-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">02</span> <span data-i18n="skills.eyebrow">Capability map</span></p>
+      <h2 class="section__title" id="skills-title" data-reveal data-reveal-delay="1" data-i18n="skills.title">Skill explorer</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="skills.lede">
+        Nine domains, filterable and inspectable. Levels are self-assessed states — <em>learning</em>, <em>practicing</em>, <em>advanced</em>.
+      </p>
+    </header>
+
+    <div class="skills-toolbar" data-reveal>
+      <div class="chips" id="skill-filters" role="tablist" aria-label="Filter skills by category"></div>
+      <div class="skills-toolbar__right">
+        <label class="switch">
+          <input type="checkbox" id="skill-mode-toggle">
+          <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+          <span class="switch__label" data-i18n="skills.radarMode">Radar view</span>
+        </label>
+        <button type="button" class="btn btn--ghost btn--sm" id="skills-expand-all">
+          <svg class="ico" aria-hidden="true"><use href="#i-layers"></use></svg> <span data-i18n="skills.expand">Expand all</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="skills-layout" id="skills-layout">
+      <div class="skills-panel" data-view="grid">
+        <div class="skill-grid" id="skill-grid"></div>
+      </div>
+
+      <aside class="radar-panel" id="radar-panel" aria-label="Skill radar chart">
+        <div class="radar-panel__head">
+          <span class="eyebrow" data-i18n="skills.radarTitle">Domain radar</span>
+          <span class="radar-panel__hint" data-i18n="skills.radarHint">Hover a point to inspect</span>
+        </div>
+        <div class="radar-wrap">
+          <svg id="skill-radar" class="radar" viewBox="0 0 320 320" role="img" aria-label="Radar chart of skill domains" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+        <ul class="radar-legend" id="radar-legend"></ul>
+      </aside>
+    </div>
+
+    <div class="skill-detail" id="skill-detail" hidden aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects" data-section="projects" data-nav-title="Projects" aria-labelledby="projects-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">03</span> <span data-i18n="projects.eyebrow">Selected work</span></p>
+      <h2 class="section__title" id="projects-title" data-reveal data-reveal-delay="1" data-i18n="projects.title">Project showcase</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="projects.lede">
+        Rendered live from a data array in <code>script.js</code> — add an object, get a card, a filter hit and a detail modal.
+      </p>
+    </header>
+
+    <div class="projects-toolbar" data-reveal>
+      <div class="field field--search">
+        <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+        <input type="search" id="project-search" placeholder="Search projects, stack, keywords…" aria-label="Search projects" autocomplete="off">
+        <kbd class="kbd">/</kbd>
+      </div>
+      <label class="field field--select">
+        <span class="sr-only">Sort projects</span>
+        <select id="project-sort" aria-label="Sort projects">
+          <option value="featured">Featured first</option>
+          <option value="recent">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="az">Title A → Z</option>
+          <option value="za">Title Z → A</option>
+        </select>
+        <svg class="ico ico--chev" aria-hidden="true"><use href="#i-layers"></use></svg>
+      </label>
+    </div>
+
+    <div class="chips chips--filters" id="project-filters" role="tablist" aria-label="Filter projects by category" data-reveal></div>
+
+    <p class="result-meta" id="project-count" role="status" aria-live="polite"></p>
+
+    <div class="featured-strip" id="featured-strip" aria-label="Featured projects"></div>
+
+    <div class="project-grid" id="project-grid"></div>
+
+    <p class="empty-state" id="project-empty" hidden>
+      <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+      <span data-i18n="projects.empty">No projects match that filter. Try another category or clear the search.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE / TIMELINE ============ -->
+<section class="section section--alt" id="experience" data-section="experience" data-nav-title="Experience" aria-labelledby="experience-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">04</span> <span data-i18n="exp.eyebrow">Trajectory</span></p>
+      <h2 class="section__title" id="experience-title" data-reveal data-reveal-delay="1" data-i18n="exp.title">Experience &amp; learning timeline</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="exp.lede">Milestones, certifications, research and the technologies that came with each.</p>
+    </header>
+
+    <div class="timeline-toolbar" data-reveal>
+      <div class="chips" id="timeline-filters" role="tablist" aria-label="Filter timeline by type"></div>
+    </div>
+
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certifications" data-section="certifications" data-nav-title="Certifications" aria-labelledby="certs-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">05</span> <span data-i18n="certs.eyebrow">Verified learning</span></p>
+      <h2 class="section__title" id="certs-title" data-reveal data-reveal-delay="1" data-i18n="certs.title">Certifications</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="certs.lede">Placeholder entries — replace them with your real credentials and IDs.</p>
+    </header>
+
+    <div class="skills-toolbar" data-reveal>
+      <div class="chips" id="cert-filters" role="tablist" aria-label="Filter certifications"></div>
+      <div class="field field--search field--compact">
+        <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+        <input type="search" id="cert-search" placeholder="Search certifications…" aria-label="Search certifications" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="cert-grid" id="cert-grid"></div>
+    <p class="empty-state" id="cert-empty" hidden>
+      <svg class="ico" aria-hidden="true"><use href="#i-cert"></use></svg>
+      <span data-i18n="certs.empty">No certifications in this category yet.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section section--alt" id="achievements" data-section="achievements" data-nav-title="Achievements" aria-labelledby="ach-title">
+  <div class="shell">
+    <header class="section__head">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">06</span> <span data-i18n="ach.eyebrow">Signal</span></p>
+      <h2 class="section__title" id="ach-title" data-reveal data-reveal-delay="1" data-i18n="ach.title">Achievements dashboard</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="ach.lede">
+        Never inflated — every number below is yours to define. Values marked <code>[ADD…]</code> are placeholders.
+      </p>
+    </header>
+
+    <div class="stats-grid" id="stats-grid" data-reveal></div>
+
+    <div class="achievement-grid" id="achievement-grid" data-reveal data-reveal-delay="1"></div>
+
+    <aside class="github-panel" id="github-panel" data-reveal data-reveal-delay="2" aria-labelledby="gh-title">
+      <div class="github-panel__head">
+        <div>
+          <h3 id="gh-title"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg> GitHub — live</h3>
+          <p class="github-panel__sub" id="gh-user">Fetching public profile…</p>
+        </div>
+        <div class="github-panel__actions">
+          <span class="badge" id="gh-source">loading</span>
+          <button type="button" class="btn btn--ghost btn--sm" id="gh-refresh">
+            <svg class="ico" aria-hidden="true"><use href="#i-git"></use></svg> Refresh
+          </button>
+        </div>
+      </div>
+      <div class="github-stats" id="github-stats"></div>
+      <div class="github-repos" id="github-repos"></div>
+      <p class="github-panel__note" id="gh-note" hidden></p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact" data-section="contact" data-nav-title="Contact" aria-labelledby="contact-title">
+  <div class="shell">
+    <header class="section__head section__head--center">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">07</span> <span data-i18n="contact.eyebrow">Open channel</span></p>
+      <h2 class="section__title" id="contact-title" data-reveal data-reveal-delay="1" data-i18n="contact.title">Let's build something serious</h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2" data-i18n="contact.lede">
+        No backend, no fake form — direct channels only. Email opens your mail client; the copy button puts it on your clipboard.
+      </p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-card contact-card--email" data-reveal>
+        <span class="eyebrow" data-i18n="contact.emailLabel">Email</span>
+        <a class="contact-card__value" id="contact-email" href="#" data-bind-email>YOUR_EMAIL</a>
+        <div class="contact-card__actions">
+          <a class="btn btn--primary btn--sm" id="contact-mail-btn" href="#">
+            <svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg> <span data-i18n="contact.compose">Compose mail</span>
+          </a>
+          <button type="button" class="btn btn--ghost btn--sm" id="copy-email-btn">
+            <svg class="ico" aria-hidden="true"><use href="#i-copy"></use></svg> <span data-i18n="contact.copy">Copy email</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="contact-card" data-reveal data-reveal-delay="1">
+        <span class="eyebrow" data-i18n="contact.profiles">Profiles</span>
+        <ul class="profile-list" id="contact-profiles"></ul>
+      </div>
+
+      <div class="contact-card" data-reveal data-reveal-delay="2">
+        <span class="eyebrow" data-i18n="contact.availability">Availability</span>
+        <p class="contact-card__text" data-i18n="contact.availabilityText">[ADD YOUR AVAILABILITY] — e.g. open to internships, CTF teams, research collaborations or freelance builds.</p>
+        <ul class="tick-list" id="contact-notes"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="shell footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-cpu"></use></svg></span>
+      <div>
+        <strong data-bind="name">YOUR NAME</strong>
+        <p data-i18n="footer.tagline">Futuristic personal technology operating system — disguised as a portfolio.</p>
+      </div>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#certifications">Certs</a>
+      <a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__meta">
+      <button type="button" class="btn btn--ghost btn--sm" id="footer-os-btn">
+        <svg class="ico" aria-hidden="true"><use href="#i-monitor"></use></svg> Enter Portfolio OS
+      </button>
+      <button type="button" class="btn btn--ghost btn--sm" id="footer-random-theme">
+        <svg class="ico" aria-hidden="true"><use href="#i-sparkle"></use></svg> Surprise me
+      </button>
+      <p class="footer__copy">
+        <span data-i18n="footer.built">Built with HTML, CSS &amp; vanilla JS — no build step.</span><br>
+        © <span id="footer-year">2026</span> <span data-bind="name">YOUR NAME</span> · <span data-i18n="footer.rights">All rights reserved.</span>
+      </p>
+    </div>
+  </div>
+  <p class="footer__easter" aria-hidden="true">try the konami code · or type <code>sudo</code> in the terminal</p>
+</footer>
+
+<!-- ============ EDITORIAL SPLIT ============ -->
+<div class="shell"><div class="split-rule" aria-hidden="true"><span>SYS.MSG / END OF TRANSMISSION</span></div></div>
+
+<!-- ============ GENERIC MODAL (projects, certificates, images) ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="modal__chrome" aria-hidden="true"><span></span><span></span><span></span><em id="modal-chrome-title">detail.view</em></div>
+    <header class="modal__head">
+      <div>
+        <p class="eyebrow" id="modal-kicker">Detail</p>
+        <h2 class="modal__title" id="modal-title">Title</h2>
+      </div>
+      <button type="button" class="icon-btn" data-modal-close aria-label="Close dialog">
+        <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </header>
+    <div class="modal__body" id="modal-body"></div>
+    <footer class="modal__foot" id="modal-foot"></footer>
+  </div>
+</div>
+
+<!-- ============ COMMAND PALETTE ============ -->
+<div class="overlay overlay--cmd" id="command-palette" hidden>
+  <div class="overlay__scrim" data-overlay-close="command-palette"></div>
+  <div class="palette" role="dialog" aria-modal="true" aria-labelledby="cmd-title" tabindex="-1">
+    <div class="palette__input">
+      <svg class="ico" aria-hidden="true"><use href="#i-command"></use></svg>
+      <input type="text" id="cmd-input" placeholder="Type a command or search everything…" aria-labelledby="cmd-title" autocomplete="off" spellcheck="false">
+      <h2 class="sr-only" id="cmd-title">Command palette</h2>
+      <kbd class="kbd">esc</kbd>
+    </div>
+    <ul class="palette__list" id="cmd-list" role="listbox" aria-label="Commands"></ul>
+    <div class="palette__foot">
+      <span><kbd class="kbd">↑</kbd><kbd class="kbd">↓</kbd> navigate</span>
+      <span><kbd class="kbd">↵</kbd> run</span>
+      <span><kbd class="kbd">/</kbd> global search</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ THEME STUDIO ============ -->
+<div class="overlay overlay--studio" id="theme-studio" hidden>
+  <div class="overlay__scrim" data-overlay-close="theme-studio"></div>
+  <div class="studio" role="dialog" aria-modal="true" aria-labelledby="studio-title" tabindex="-1">
+    <header class="studio__head">
+      <div>
+        <p class="eyebrow">Appearance engine</p>
+        <h2 id="studio-title">Theme Studio</h2>
+        <p class="studio__sub">Seventeen visual systems. Each rewrites typography, spacing, surfaces, borders and motion — not just colour.</p>
+      </div>
+      <button type="button" class="icon-btn" data-overlay-close="theme-studio" aria-label="Close theme studio">
+        <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </header>
+
+    <div class="studio__controls">
+      <div class="control">
+        <span class="control__label">Appearance</span>
+        <div class="segmented" id="mode-switch" role="radiogroup" aria-label="Light or dark mode">
+          <button type="button" class="segmented__btn" data-mode-btn="dark" role="radio" aria-checked="true">
+            <svg class="ico" aria-hidden="true"><use href="#i-moon"></use></svg> Dark
+          </button>
+          <button type="button" class="segmented__btn" data-mode-btn="light" role="radio" aria-checked="false">
+            <svg class="ico" aria-hidden="true"><use href="#i-sun"></use></svg> Light
+          </button>
+        </div>
+      </div>
+
+      <div class="control">
+        <span class="control__label">Accent</span>
+        <div class="accent-row">
+          <div class="accent-swatches" id="accent-swatches" role="radiogroup" aria-label="Accent colour"></div>
+          <label class="accent-custom" data-tip="Custom accent">
+            <input type="color" id="accent-custom" value="#22d3ee" aria-label="Custom accent colour">
+            <span class="accent-custom__ring" aria-hidden="true"></span>
+          </label>
+          <button type="button" class="btn btn--ghost btn--sm" id="accent-reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="control control--toggles">
+        <span class="control__label">Preferences</span>
+        <div class="toggle-row">
+          <label class="switch">
+            <input type="checkbox" id="pref-reduced-motion">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Reduce motion</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="pref-ambient">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Ambient mode</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="pref-muted">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Mute</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="pref-cursor">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Custom cursor</span>
+          </label>
+        </div>
+        <div class="control__row">
+          <span class="control__label">Language</span>
+          <div class="segmented" id="locale-switch" role="radiogroup" aria-label="Language">
+            <button type="button" class="segmented__btn" data-locale-btn="en" role="radio" aria-checked="true">English</button>
+            <button type="button" class="segmented__btn" data-locale-btn="bn" role="radio" aria-checked="false">বাংলা</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="studio__body">
+      <div class="studio__themes-head">
+        <span class="eyebrow">THEMES</span>
+        <div class="studio__themes-actions">
+          <button type="button" class="btn btn--primary btn--sm" id="theme-randomize">
+            <svg class="ico" aria-hidden="true"><use href="#i-sparkle"></use></svg> Surprise Me
+          </button>
+        </div>
+      </div>
+      <div class="theme-grid" id="theme-grid" role="radiogroup" aria-label="Choose a theme"></div>
+      <p class="studio__active" id="studio-active" aria-live="polite"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TERMINAL MODE ============ -->
+<div class="overlay overlay--terminal" id="terminal-dock" hidden>
+  <div class="overlay__scrim" data-overlay-close="terminal-dock"></div>
+  <div class="terminal" role="dialog" aria-modal="true" aria-labelledby="terminal-title" tabindex="-1">
+    <header class="terminal__head">
+      <span class="terminal__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <h2 class="terminal__title" id="terminal-title">portfolio — interactive shell</h2>
+      <button type="button" class="icon-btn" data-overlay-close="terminal-dock" aria-label="Close terminal">
+        <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </header>
+    <div class="terminal__screen" id="terminal-screen" tabindex="0" role="log" aria-live="polite" aria-label="Terminal output"></div>
+    <form class="terminal__form" id="terminal-form" autocomplete="off">
+      <label class="terminal__prompt" for="terminal-input" aria-hidden="true"><span id="terminal-user">visitor</span>@portfolio:~$</label>
+      <input type="text" id="terminal-input" name="cmd" aria-label="Terminal input" spellcheck="false" autocapitalize="off">
+    </form>
+    <p class="terminal__hint">Type <code>help</code> for commands · <code>exit</code> to close</p>
+  </div>
+</div>
+
+<!-- ============ PORTFOLIO OS ============ -->
+<div class="os" id="os-layer" hidden aria-label="Portfolio OS mode" role="application">
+  <div class="os__wallpaper" aria-hidden="true">
+    <canvas id="os-canvas"></canvas>
+    <div class="os__grid"></div>
+  </div>
+
+  <div class="os__topbar">
+    <div class="os__topbar-left">
+      <span class="os__logo" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-cpu"></use></svg></span>
+      <strong>PORTFOLIO<span>OS</span></strong>
+    </div>
+    <div class="os__topbar-center">
+      <button type="button" class="os__menu-item" data-os-menu="about">File</button>
+      <button type="button" class="os__menu-item" data-os-menu="projects">Work</button>
+      <button type="button" class="os__menu-item" data-os-menu="terminal">Shell</button>
+      <button type="button" class="os__menu-item" data-os-menu="theme">Studio</button>
+    </div>
+    <div class="os__topbar-right">
+      <span class="os__clock" id="os-clock">--:--</span>
+      <button type="button" class="icon-btn" id="os-exit" aria-label="Exit Portfolio OS">
+        <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="os__desktop" id="os-desktop">
+    <div class="os__icons" id="os-icons"></div>
+    <div class="os__windows" id="os-windows"></div>
+    <div class="os__welcome" id="os-welcome">
+      <p class="eyebrow">Session started</p>
+      <h2>Welcome to Portfolio OS</h2>
+      <p>Drag windows by their title bars. Double-click a desktop icon to open it. Everything you see is rendered by the same data that powers the page above.</p>
+      <div class="os__welcome-actions">
+        <button type="button" class="btn btn--primary btn--sm" data-os-open="about">Open About</button>
+        <button type="button" class="btn btn--ghost btn--sm" data-os-open="terminal">Open Terminal</button>
+        <button type="button" class="btn btn--ghost btn--sm" id="os-welcome-dismiss">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="os__dock" id="os-dock" aria-label="Dock"></div>
+  <div class="os__statusbar" id="os-statusbar" aria-live="polite">
+    <span id="os-status-text">Ready</span>
+    <span class="os__status-right">
+      <button type="button" class="os__chip" id="os-theme-cycle">Theme</button>
+      <button type="button" class="os__chip" id="os-back">Back to portfolio</button>
+    </span>
+  </div>
+</div>
+
+<!-- ============ TOASTS ============ -->
+<div class="toasts" id="toasts" role="region" aria-live="polite" aria-label="Notifications"></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor__ring" id="cursor-ring"></span>
+  <span class="cursor__dot" id="cursor-dot"></span>
+</div>
+
+<!-- ============ FLOATING CONTROLS ============ -->
+<div class="float-controls" id="float-controls">
+  <button type="button" class="fab" id="fab-ambient" aria-label="Toggle ambient mode" data-tip="Ambient mode">
+    <svg class="ico" aria-hidden="true"><use href="#i-music"></use></svg>
+  </button>
+  <button type="button" class="fab" id="fab-theme" aria-label="Quick theme switch" data-tip="Surprise theme">
+    <svg class="ico" aria-hidden="true"><use href="#i-palette"></use></svg>
+  </button>
+  <button type="button" class="fab fab--top" id="back-to-top" aria-label="Back to top" data-tip="Back to top">
+    <svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg>
+  </button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

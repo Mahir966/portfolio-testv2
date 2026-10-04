@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" rx="28" fill="#0b1020"/>
+  <rect width="400" height="400" rx="28" fill="url(#dots)"/>
+  <circle cx="200" cy="152" r="62" fill="none" stroke="url(#p)" stroke-width="6"/>
+  <path d="M84 350c0-64 52-104 116-104s116 40 116 104" fill="none" stroke="url(#p)" stroke-width="6" stroke-linecap="round"/>
+  <text x="200" y="386" text-anchor="middle" fill="#93a3c8" font-family="monospace" font-size="16" letter-spacing="3">ADD YOUR PHOTO</text>
+</svg>
